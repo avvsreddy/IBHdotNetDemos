@@ -4,18 +4,52 @@
     {
         static void Main(string[] args)
         {
-            // store/accept emp details the display
+            //Product p1 = new Product();
+            //p1.ProductId = 111;
+            //p1.Name = "I Phone 14 Plus";
+            //p1.Rate = 125000;
+            //p1.Catagory = "Mobiles";
+            //p1.Brand = "Apple";
 
-            Employee e1 = new Employee();
-            //e1.SetEmpId(111);
-            e1.EmpId = 111;
-            //Console.WriteLine(e1.GetEmpId());
-            Console.WriteLine(e1.EmpId);
+
+            // Object Initialization Syntax
+
+            var p2 = new { ProductId = 222, Name = "I Phone" };
+
+
+            var p3 = new { Name = "I Phone" };
+
+            var p4 = new { ProductId = 134, Name = "name", Rate = 563464 };
+
+
 
         }
     }
 
-    class Employee
+    abstract class Calculator
+    {
+        public int Sum(int fno, int sno) { return fno + sno; }
+        public abstract int Multiply(int fno, int sno);
+    }
+
+    class SuperCalculator : Calculator
+    {
+        public override int Multiply(int fno, int sno)
+        {
+            return fno * sno;
+        }
+
+        public int Sum(int fno, int sno)
+        {
+            return fno + sno;
+        }
+    }
+    class Person
+    {
+
+    }
+
+    class Employee : Person
     {
         //private int empid, eid;
         private int backingfields23423423423423;
@@ -53,4 +87,16 @@
             return salary;
         }
     }
+
+
+    //class Product
+    //{
+
+    //    public int ProductId { get; set; }
+    //    public string Name { get; set; }
+    //    public double Rate { get; set; }
+    //    public string Catagory { get; set; }
+    //    public string Brand { get; set; }
+
+    //}
 }
