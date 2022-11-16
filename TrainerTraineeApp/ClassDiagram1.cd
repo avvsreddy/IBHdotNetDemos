@@ -38,13 +38,13 @@
     <Position X="4.5" Y="2.75" Width="1.5" />
     <AssociationLine Name="Trainees" Type="TrainerTraineeApp.Trainee" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="6" Y="3.059" />
-        <Point X="8.312" Y="3.059" />
+        <Point X="6" Y="3.349" />
+        <Point X="8.312" Y="3.349" />
         <Point X="8.312" Y="1.618" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAIAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAgAAAIAAAIAAAAAAAAACAEAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -78,7 +78,7 @@
   <Class Name="TrainerTraineeApp.Unit">
     <Position X="7" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAQAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
