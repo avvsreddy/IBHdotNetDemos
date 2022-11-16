@@ -3,17 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstConsoleApp", "MyFirstConsoleApp\MyFirstConsoleApp.csproj", "{AAE75237-7980-4952-A499-48D4FE0F4B76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstConsoleApp", "MyFirstConsoleApp\MyFirstConsoleApp.csproj", "{AAE75237-7980-4952-A499-48D4FE0F4B76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{5E5A2A87-5061-43C5-952F-936E1FF892BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{5E5A2A87-5061-43C5-952F-936E1FF892BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{5DD89B74-448E-434B-83A2-5934146A2DBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{5DD89B74-448E-434B-83A2-5934146A2DBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp4", "ConsoleApp4\ConsoleApp4.csproj", "{D12204B6-D68E-453D-BE4C-6D6FB82F522C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp4", "ConsoleApp4\ConsoleApp4.csproj", "{D12204B6-D68E-453D-BE4C-6D6FB82F522C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementSystem", "EmployeeManagementSystem\EmployeeManagementSystem.csproj", "{FAA232D4-141E-48FA-B11B-8814C65F4B5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagementSystem", "EmployeeManagementSystem\EmployeeManagementSystem.csproj", "{FAA232D4-141E-48FA-B11B-8814C65F4B5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabsNRef", "LabsNRef\LabsNRef.csproj", "{C721D5D9-354F-4F76-A15C-FBD5B3989F45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabsNRef", "LabsNRef\LabsNRef.csproj", "{C721D5D9-354F-4F76-A15C-FBD5B3989F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainerTraineeApp", "TrainerTraineeApp\TrainerTraineeApp.csproj", "{EC154C5B-01E8-4A1B-8BAB-975E46FED18D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMathClassLibrary", "SimpleMathClassLibrary\SimpleMathClassLibrary.csproj", "{BCD70F42-B32E-41F7-ADC9-F4167E1F8054}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleMathApplication", "SimpleMathApplication", "{A6AB8166-B3FD-45D7-8581-1600D4AE87AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{FC83F4CC-E0AA-4630-9CB3-A218B7DADCCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{BB09AF1F-963E-4977-9FFC-07E0C1435888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMathWinFormsApp", "SimpleMathWinFormsApp\SimpleMathWinFormsApp.csproj", "{A93B4FC1-E791-472E-A314-C4F3F3379A59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,9 +57,28 @@ Global
 		{C721D5D9-354F-4F76-A15C-FBD5B3989F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C721D5D9-354F-4F76-A15C-FBD5B3989F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C721D5D9-354F-4F76-A15C-FBD5B3989F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC154C5B-01E8-4A1B-8BAB-975E46FED18D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC154C5B-01E8-4A1B-8BAB-975E46FED18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC154C5B-01E8-4A1B-8BAB-975E46FED18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC154C5B-01E8-4A1B-8BAB-975E46FED18D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD70F42-B32E-41F7-ADC9-F4167E1F8054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD70F42-B32E-41F7-ADC9-F4167E1F8054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD70F42-B32E-41F7-ADC9-F4167E1F8054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD70F42-B32E-41F7-ADC9-F4167E1F8054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93B4FC1-E791-472E-A314-C4F3F3379A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93B4FC1-E791-472E-A314-C4F3F3379A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93B4FC1-E791-472E-A314-C4F3F3379A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93B4FC1-E791-472E-A314-C4F3F3379A59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AAE75237-7980-4952-A499-48D4FE0F4B76} = {FC83F4CC-E0AA-4630-9CB3-A218B7DADCCD}
+		{BCD70F42-B32E-41F7-ADC9-F4167E1F8054} = {BB09AF1F-963E-4977-9FFC-07E0C1435888}
+		{FC83F4CC-E0AA-4630-9CB3-A218B7DADCCD} = {A6AB8166-B3FD-45D7-8581-1600D4AE87AE}
+		{BB09AF1F-963E-4977-9FFC-07E0C1435888} = {A6AB8166-B3FD-45D7-8581-1600D4AE87AE}
+		{A93B4FC1-E791-472E-A314-C4F3F3379A59} = {FC83F4CC-E0AA-4630-9CB3-A218B7DADCCD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {019F91EE-C387-4666-9B66-DD1B9E979CA5}

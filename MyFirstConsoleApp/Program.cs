@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // SRP - PL
         {
             // Accept two ints and find the max and display
 
@@ -14,20 +14,18 @@
             Console.WriteLine("Enter Second number:");
             sno = int.Parse(Console.ReadLine());
 
-            if (fno > sno)
-            {
-                max = fno;
-            }
-            else
-            {
-                max = sno;
-            }
-
+            max = SimpleMathClassLibrary.SimpleMath.FindMax(fno, sno);
             Console.WriteLine(max);
             Console.WriteLine($"The maximum of {fno} and {sno} is {max}");
 
 
 
         }
+
+
     }
+
+
 }
+
+
