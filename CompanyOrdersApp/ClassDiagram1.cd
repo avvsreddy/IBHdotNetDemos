@@ -11,52 +11,42 @@
     <Position X="3" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAEAABAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>Company.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Customers" />
-      <Property Name="Items" />
-    </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="CompanyOrdersApp.Item">
-    <Position X="6" Y="0.5" Width="1.5" />
+  <Class Name="CompanyOrdersApp.Item" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>Item.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CompanyOrdersApp.Customer">
     <Position X="3" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>Customer.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Orders" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CompanyOrdersApp.RegCustomer" Collapsed="true">
     <Position X="3" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>RegCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CompanyOrdersApp.Order">
     <Position X="5.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>Order.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="OrderItems" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CompanyOrdersApp.OrderItem">
     <Position X="8.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>OrderItem.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Item" />
