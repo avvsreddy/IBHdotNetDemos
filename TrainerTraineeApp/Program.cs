@@ -41,7 +41,8 @@
             m2.Units.Add(u4);
 
             Console.WriteLine($"Total Duration: {training.GetTotalDuration()}");
-            Console.WriteLine($"The Lengthy Unit name is {training.GetLengthyUnitName()}");
+            Unit unit = training.GetLengthyUnitName();
+            Console.WriteLine($"The Lengthy Unit name is {unit.Name} and the duration is {unit.Duration}");
         }
     }
 
@@ -102,9 +103,25 @@
             //}
         }
 
-        public string GetLengthyUnitName()
+        public Unit GetLengthyUnitName()
         {
-
+            int maxDuration = 0;
+            string name = null;
+            // calculate the maxduration
+            // for each moudles
+            foreach (Module module in TheCourse.Modules)
+            {
+                // for each units
+                foreach (Unit unit in module.Units)
+                {
+                    if (unit.Duration >= maxDuration)
+                    {
+                        maxDuration = unit.Duration;
+                        name = unit.Name;
+                    }
+                }
+            }
+            return new Unit { Duration = maxDuration, Name = name };
         }
     }
 
