@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagementSystem", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabsNRef", "LabsNRef\LabsNRef.csproj", "{C721D5D9-354F-4F76-A15C-FBD5B3989F45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainerTraineeApp", "TrainerTraineeApp\TrainerTraineeApp.csproj", "{EC154C5B-01E8-4A1B-8BAB-975E46FED18D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainerTraineeApp", "TrainerTraineeApp\TrainerTraineeApp.csproj", "{EC154C5B-01E8-4A1B-8BAB-975E46FED18D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMathClassLibrary", "SimpleMathClassLibrary\SimpleMathClassLibrary.csproj", "{BCD70F42-B32E-41F7-ADC9-F4167E1F8054}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleMathClassLibrary", "SimpleMathClassLibrary\SimpleMathClassLibrary.csproj", "{BCD70F42-B32E-41F7-ADC9-F4167E1F8054}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleMathApplication", "SimpleMathApplication", "{A6AB8166-B3FD-45D7-8581-1600D4AE87AE}"
 EndProject
@@ -25,9 +25,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Prese
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{BB09AF1F-963E-4977-9FFC-07E0C1435888}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMathWinFormsApp", "SimpleMathWinFormsApp\SimpleMathWinFormsApp.csproj", "{A93B4FC1-E791-472E-A314-C4F3F3379A59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleMathWinFormsApp", "SimpleMathWinFormsApp\SimpleMathWinFormsApp.csproj", "{A93B4FC1-E791-472E-A314-C4F3F3379A59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyOrdersApp", "CompanyOrdersApp\CompanyOrdersApp.csproj", "{90E93DDB-F64F-4459-8DA5-0083A6278BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyOrdersApp", "CompanyOrdersApp\CompanyOrdersApp.csproj", "{90E93DDB-F64F-4459-8DA5-0083A6278BF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OO Demos", "OO Demos", "{EAB527D4-FB74-42D0-AEF2-9480AA5735F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODemo1", "OODemo1\OODemo1.csproj", "{75738243-BAA6-434A-9CDF-33836735A32A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,10 @@ Global
 		{90E93DDB-F64F-4459-8DA5-0083A6278BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90E93DDB-F64F-4459-8DA5-0083A6278BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90E93DDB-F64F-4459-8DA5-0083A6278BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75738243-BAA6-434A-9CDF-33836735A32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75738243-BAA6-434A-9CDF-33836735A32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75738243-BAA6-434A-9CDF-33836735A32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75738243-BAA6-434A-9CDF-33836735A32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +93,7 @@ Global
 		{FC83F4CC-E0AA-4630-9CB3-A218B7DADCCD} = {A6AB8166-B3FD-45D7-8581-1600D4AE87AE}
 		{BB09AF1F-963E-4977-9FFC-07E0C1435888} = {A6AB8166-B3FD-45D7-8581-1600D4AE87AE}
 		{A93B4FC1-E791-472E-A314-C4F3F3379A59} = {FC83F4CC-E0AA-4630-9CB3-A218B7DADCCD}
+		{75738243-BAA6-434A-9CDF-33836735A32A} = {EAB527D4-FB74-42D0-AEF2-9480AA5735F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {019F91EE-C387-4666-9B66-DD1B9E979CA5}
