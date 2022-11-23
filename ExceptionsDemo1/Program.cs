@@ -21,7 +21,7 @@
                     Console.WriteLine($"The sum of {fno} and {sno} is {sum}");
                     // close 
                 }
-                catch (FormatException fe)
+                catch (FormatException fe) //when (fno == 10)
                 {
                     Console.WriteLine("Please enter only numbers");
                 }
