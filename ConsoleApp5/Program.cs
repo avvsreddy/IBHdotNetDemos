@@ -4,17 +4,42 @@
     {
         static void Main(string[] args)
         {
-            List<int> numbers = new List<int>();
-            while (true)
-            {
-                Console.Write("Enter number: ");
-                string input = Console.ReadLine();
-                if (string.IsNullOrWhiteSpace(input))
-                    break;
-                numbers.Add(int.Parse(input));
-            }
-            Console.WriteLine("thanks");
-            Console.WriteLine($"The sum is : {numbers.Sum()}");
+            GetData();
+            Console.WriteLine("back in main");
+            GetDataAsync();
+            //Console.WriteLine(result);
+            Console.WriteLine("back in main");
+        }
+
+        private static async Task GetDataAsync()
+        {
+            Console.WriteLine("calling bigmethodasync");
+            var task = await BigMethodAsync();
+            Console.WriteLine("doing something ");
+            Console.WriteLine("doig something else");
+            Console.WriteLine($"Got: {task}");
+        }
+
+        private static void GetData()
+        {
+            Console.WriteLine("calling bigmethod()");
+            int data = BigMethod();
+
+            Console.WriteLine($"Got: {data}");
+
+        }
+
+        public static Task<int> BigMethodAsync()
+        {
+            //Thread.Sleep(5000);
+            return Task.Run<int>(() => { return 100; });
+        }
+
+        public static int BigMethod()
+        {
+            //Thread.Sleep(5000);
+            return 100;
         }
     }
+
 }

@@ -31,39 +31,39 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyOrdersApp", "Company
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OO Demos", "OO Demos", "{EAB527D4-FB74-42D0-AEF2-9480AA5735F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODemo1", "OODemo1\OODemo1.csproj", "{75738243-BAA6-434A-9CDF-33836735A32A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OODemo1", "OODemo1\OODemo1.csproj", "{75738243-BAA6-434A-9CDF-33836735A32A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILDLanguagesDemo", "ILDLanguagesDemo\ILDLanguagesDemo.csproj", "{EACD7579-24EB-4032-BF74-2C6125C62403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILDLanguagesDemo", "ILDLanguagesDemo\ILDLanguagesDemo.csproj", "{EACD7579-24EB-4032-BF74-2C6125C62403}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{FE7BD5E0-31FF-45A0-AFDD-CD7C4304C19B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{FE7BD5E0-31FF-45A0-AFDD-CD7C4304C19B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Collections Demo", "Collections Demo", "{34A63B4C-9704-4DF0-8C0D-6C8DB7414098}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsDemo1", "CollectionsDemo1\CollectionsDemo1.csproj", "{CA08316C-ECE0-4B0B-92B6-1844942976D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsDemo1", "CollectionsDemo1\CollectionsDemo1.csproj", "{CA08316C-ECE0-4B0B-92B6-1844942976D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicCollectionDemo1", "DynamicCollectionDemo1\DynamicCollectionDemo1.csproj", "{41CA7336-900C-4331-B2B6-7A2FCEE3CE7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicCollectionDemo1", "DynamicCollectionDemo1\DynamicCollectionDemo1.csproj", "{41CA7336-900C-4331-B2B6-7A2FCEE3CE7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicCollectionDemo2", "DynamicCollectionDemo2\DynamicCollectionDemo2.csproj", "{923FC68D-5A2F-4070-B25C-83E220F3D59E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicCollectionDemo2", "DynamicCollectionDemo2\DynamicCollectionDemo2.csproj", "{923FC68D-5A2F-4070-B25C-83E220F3D59E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exceptions Demo", "Exceptions Demo", "{8CC230FD-926B-448A-B6C5-115A0AC48AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsDemo1", "ExceptionsDemo1\ExceptionsDemo1.csproj", "{12521C15-B9E5-497C-9254-ABFD93B8106F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionsDemo1", "ExceptionsDemo1\ExceptionsDemo1.csproj", "{12521C15-B9E5-497C-9254-ABFD93B8106F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExDemo2", "ExDemo2\ExDemo2.csproj", "{AAD75583-3B61-4B3C-9C46-F2ED6E998DEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExDemo2", "ExDemo2\ExDemo2.csproj", "{AAD75583-3B61-4B3C-9C46-F2ED6E998DEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsWithNLogDemo", "ExceptionsWithNLogDemo\ExceptionsWithNLogDemo.csproj", "{26140DC8-A859-4431-9D6E-76EE95D90F3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionsWithNLogDemo", "ExceptionsWithNLogDemo\ExceptionsWithNLogDemo.csproj", "{26140DC8-A859-4431-9D6E-76EE95D90F3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delegates Demo", "Delegates Demo", "{617C74E0-9608-46BF-B459-6D909E11C526}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesDemo1", "DelegatesDemo1\DelegatesDemo1.csproj", "{9742C499-7B1E-496F-9D97-11D32CE7A82F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesDemo1", "DelegatesDemo1\DelegatesDemo1.csproj", "{9742C499-7B1E-496F-9D97-11D32CE7A82F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesDemo2", "DelegatesDemo2\DelegatesDemo2.csproj", "{015EC51C-19F2-417F-8A0E-3B9CAAC177A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesDemo2", "DelegatesDemo2\DelegatesDemo2.csproj", "{015EC51C-19F2-417F-8A0E-3B9CAAC177A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDemo1", "LambdaDemo1\LambdaDemo1.csproj", "{43A3C556-3FD3-4B58-A551-FB1F90F38D3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDemo1", "LambdaDemo1\LambdaDemo1.csproj", "{43A3C556-3FD3-4B58-A551-FB1F90F38D3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesDemo3", "DelegatesDemo3\DelegatesDemo3.csproj", "{E7B15ADB-139B-49E6-AD0B-F318876F1EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesDemo3", "DelegatesDemo3\DelegatesDemo3.csproj", "{E7B15ADB-139B-49E6-AD0B-F318876F1EAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp5", "ConsoleApp5\ConsoleApp5.csproj", "{6FB1A447-9311-49E5-AE7B-417D74F1F8BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp5", "ConsoleApp5\ConsoleApp5.csproj", "{6FB1A447-9311-49E5-AE7B-417D74F1F8BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
