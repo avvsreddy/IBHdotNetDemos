@@ -4,10 +4,41 @@
     {
         static void Main(string[] args)
         {
-            //WriteFile();
+            // 
 
-            //ReadAll();
 
+
+
+
+
+
+
+
+
+
+
+            string[] files = Directory.GetFiles("e:\\");
+            foreach (string file in files)
+            {
+                Console.WriteLine(file);
+                FileInfo finfo = new FileInfo(file);
+
+            }
+        }
+
+        private static void GetDrives()
+        {
+            // get all drives in my system
+            DriveInfo[] drives = DriveInfo.GetDrives();
+            foreach (DriveInfo drive in drives)
+            {
+                Console.WriteLine($"{drive.Name} \t {drive.TotalFreeSpace} / {drive.TotalSize} ");
+
+            }
+        }
+
+        private static void ReadLines()
+        {
             // read line by line
             // read data from file
             StreamReader sr = new StreamReader("e://sample//test.txt");
@@ -17,9 +48,6 @@
                 Console.WriteLine(line);
             }
             sr.Close();
-
-
-
         }
 
         private static void ReadAll()
