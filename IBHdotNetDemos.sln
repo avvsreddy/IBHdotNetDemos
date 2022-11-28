@@ -67,7 +67,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp5", "ConsoleApp5\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "File IO Demos", "File IO Demos", "{23A60CB1-3A62-4509-B8A1-FFF447EB86C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileIODemo1", "FileIODemo1\FileIODemo1.csproj", "{0300DF4F-DCCD-4B79-98EB-1963E71C3374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileIODemo1", "FileIODemo1\FileIODemo1.csproj", "{0300DF4F-DCCD-4B79-98EB-1963E71C3374}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contact Management app", "Contact Management app", "{1BE9535F-F155-4A09-BDB7-59289F4CEF85}"
 EndProject
@@ -75,9 +75,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Prese
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access Layer", "Data Access Layer", "{F5A4B450-4171-4497-B4DC-75FA187AB6E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement.ConsoleApp", "ContactManagement.ConsoleApp\ContactManagement.ConsoleApp.csproj", "{0613D083-B225-47F7-8759-21EF5C1A8A2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagement.ConsoleApp", "ContactManagement.ConsoleApp\ContactManagement.ConsoleApp.csproj", "{0613D083-B225-47F7-8759-21EF5C1A8A2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement.DataAccess", "ContactManagement.DataAccess\ContactManagement.DataAccess.csproj", "{8C237C04-4BE5-4EA4-B6CA-5F473A94CB54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagement.DataAccess", "ContactManagement.DataAccess\ContactManagement.DataAccess.csproj", "{8C237C04-4BE5-4EA4-B6CA-5F473A94CB54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Multi Threading Demos", "Multi Threading Demos", "{1586AF31-E736-43BC-8170-C2B96B7888AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTDemo1", "MTDemo1\MTDemo1.csproj", "{F3F22370-7D14-4190-8733-E61B95B71BE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -193,6 +197,10 @@ Global
 		{8C237C04-4BE5-4EA4-B6CA-5F473A94CB54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C237C04-4BE5-4EA4-B6CA-5F473A94CB54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C237C04-4BE5-4EA4-B6CA-5F473A94CB54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F22370-7D14-4190-8733-E61B95B71BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F22370-7D14-4190-8733-E61B95B71BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F22370-7D14-4190-8733-E61B95B71BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F22370-7D14-4190-8733-E61B95B71BE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +230,7 @@ Global
 		{F5A4B450-4171-4497-B4DC-75FA187AB6E0} = {1BE9535F-F155-4A09-BDB7-59289F4CEF85}
 		{0613D083-B225-47F7-8759-21EF5C1A8A2E} = {AFB0D96B-39E8-4602-B9C7-FC6DE9E41380}
 		{8C237C04-4BE5-4EA4-B6CA-5F473A94CB54} = {F5A4B450-4171-4497-B4DC-75FA187AB6E0}
+		{F3F22370-7D14-4190-8733-E61B95B71BE2} = {1586AF31-E736-43BC-8170-C2B96B7888AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {019F91EE-C387-4666-9B66-DD1B9E979CA5}
