@@ -1,0 +1,32 @@
+﻿Unit Testing Lab
+-----------------------------------------
+Email ID Validator with Unit Testing
+
+Part 1: 
+create a class called EmailValidator with a method called Validate(string email)
+
+public class EmailValidator
+{
+	public bool Validate(string email)
+	{
+		// implement the email validation with the following business rules
+		// 1. input string should not be null or empty 
+		// 2. input string length atleast 6 characters in length
+		// 3. input string should contain @ character only once
+		// 4. input string should not contain @ symbol in the beginning or end of the string
+		// 5. input string should contain . (dot) character atleast once
+		// 6. input string should not contain . symbol in the beginning or end of the string
+		// 7. input string should not contain any spaces
+		// 8. input string should not contain any special characters like # $ % & etc other than alphabets, numbers, . (dot), _ and @ symbols
+		// 9. Save the valid email id into a separate file
+		// 9. if any rules are voilated should throw appropriate exception
+
+
+
+	}
+}
+
+Part 2:
+
+Write a suitable unit test cases to cover 100% code coverage to test the functionality using MSTesting Framework
+
