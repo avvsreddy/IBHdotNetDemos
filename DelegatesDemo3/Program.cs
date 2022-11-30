@@ -11,7 +11,7 @@
             //acc1.Subscribe(Notification.SendMail);
             //acc1.Subscribe(NewNotification.WhatsApp);
 
-            acc1.alert("Your account has been increased by $99999999999999");
+            //acc1.alert("Your account has been increased by $99999999999999");
             //acc1.Deposit(5000);
             Console.WriteLine(acc1.Balance);
             //acc1.Withdraw(1000);
