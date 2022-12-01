@@ -105,6 +105,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorClassLibrary", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorClassLibraryTestProject", "CalculatorClassLibraryTestProject\CalculatorClassLibraryTestProject.csproj", "{5E4B552C-8660-43F4-A45E-E4531032BE5C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AI Recommender Case Study", "AI Recommender Case Study", "{3AE1ED5F-3501-4DB7-B33E-2BBD089C6739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommendationEngine.Recommendor", "AIRecommendationEngine.Recommendor\AIRecommendationEngine.Recommendor.csproj", "{443ECB96-B9B9-45E2-9B05-E8560CC5BF83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -263,6 +267,10 @@ Global
 		{5E4B552C-8660-43F4-A45E-E4531032BE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E4B552C-8660-43F4-A45E-E4531032BE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E4B552C-8660-43F4-A45E-E4531032BE5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{443ECB96-B9B9-45E2-9B05-E8560CC5BF83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{443ECB96-B9B9-45E2-9B05-E8560CC5BF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{443ECB96-B9B9-45E2-9B05-E8560CC5BF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{443ECB96-B9B9-45E2-9B05-E8560CC5BF83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -302,6 +310,7 @@ Global
 		{68CB2D59-D958-49F1-BDB0-B1FB5011DB40} = {1586AF31-E736-43BC-8170-C2B96B7888AC}
 		{2E2404C2-CB9D-41B2-831A-DC53845B6410} = {EC5C5F24-2E2B-437A-8169-FD81774B9685}
 		{5E4B552C-8660-43F4-A45E-E4531032BE5C} = {EC5C5F24-2E2B-437A-8169-FD81774B9685}
+		{443ECB96-B9B9-45E2-9B05-E8560CC5BF83} = {3AE1ED5F-3501-4DB7-B33E-2BBD089C6739}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {019F91EE-C387-4666-9B66-DD1B9E979CA5}
