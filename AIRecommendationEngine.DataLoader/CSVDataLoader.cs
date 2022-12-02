@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AIRecommendationEngine.DataLoader
+﻿namespace AIRecommendationEngine.DataLoader
 {
-    internal class CSVDataLoader
+    public class CSVDataLoader : IDataLoader
     {
+        public BookDetails Load()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -95,27 +95,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTDemo3", "MTDemo3\MTDemo3.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTDemo5", "MTDemo5\MTDemo5.csproj", "{E5F416A7-5C80-4818-9A8C-1FA649EBEA1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTDemo6", "MTDemo6\MTDemo6.csproj", "{F4ED00BF-3A16-44C7-8201-D1155CAB4E5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTDemo6", "MTDemo6\MTDemo6.csproj", "{F4ED00BF-3A16-44C7-8201-D1155CAB4E5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTDemo7", "MTDemo7\MTDemo7.csproj", "{68CB2D59-D958-49F1-BDB0-B1FB5011DB40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTDemo7", "MTDemo7\MTDemo7.csproj", "{68CB2D59-D958-49F1-BDB0-B1FB5011DB40}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Testing Demos", "Unit Testing Demos", "{EC5C5F24-2E2B-437A-8169-FD81774B9685}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorClassLibrary", "CalculatorClassLibrary\CalculatorClassLibrary.csproj", "{2E2404C2-CB9D-41B2-831A-DC53845B6410}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorClassLibrary", "CalculatorClassLibrary\CalculatorClassLibrary.csproj", "{2E2404C2-CB9D-41B2-831A-DC53845B6410}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorClassLibraryTestProject", "CalculatorClassLibraryTestProject\CalculatorClassLibraryTestProject.csproj", "{5E4B552C-8660-43F4-A45E-E4531032BE5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorClassLibraryTestProject", "CalculatorClassLibraryTestProject\CalculatorClassLibraryTestProject.csproj", "{5E4B552C-8660-43F4-A45E-E4531032BE5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AI Recommender Case Study", "AI Recommender Case Study", "{3AE1ED5F-3501-4DB7-B33E-2BBD089C6739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommendationEngine.Recommendor", "AIRecommendationEngine.Recommendor\AIRecommendationEngine.Recommendor.csproj", "{443ECB96-B9B9-45E2-9B05-E8560CC5BF83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AIRecommendationEngine.Recommendor", "AIRecommendationEngine.Recommendor\AIRecommendationEngine.Recommendor.csproj", "{443ECB96-B9B9-45E2-9B05-E8560CC5BF83}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module 1", "Module 1", "{366DA046-6B56-428E-BC2C-471C94D34A4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommendationEngine.RecommenderTest", "AIRecommendationEngine.RecommenderTest\AIRecommendationEngine.RecommenderTest.csproj", "{5FF85234-F564-4CB3-AE49-60B1A5B2F61C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AIRecommendationEngine.RecommenderTest", "AIRecommendationEngine.RecommenderTest\AIRecommendationEngine.RecommenderTest.csproj", "{5FF85234-F564-4CB3-AE49-60B1A5B2F61C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module 2", "Module 2", "{39CC9946-A3CA-4224-84B4-FB0402136DFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommendationEngine.DataLoader", "AIRecommendationEngine.DataLoader\AIRecommendationEngine.DataLoader.csproj", "{A1B1FA79-5BC9-48CB-8914-F1CB33325FBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AIRecommendationEngine.DataLoader", "AIRecommendationEngine.DataLoader\AIRecommendationEngine.DataLoader.csproj", "{A1B1FA79-5BC9-48CB-8914-F1CB33325FBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module 3", "Module 3", "{5E0E9870-B0F1-477C-A277-95DB6B70DEF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -331,6 +333,7 @@ Global
 		{5FF85234-F564-4CB3-AE49-60B1A5B2F61C} = {366DA046-6B56-428E-BC2C-471C94D34A4C}
 		{39CC9946-A3CA-4224-84B4-FB0402136DFF} = {3AE1ED5F-3501-4DB7-B33E-2BBD089C6739}
 		{A1B1FA79-5BC9-48CB-8914-F1CB33325FBA} = {39CC9946-A3CA-4224-84B4-FB0402136DFF}
+		{5E0E9870-B0F1-477C-A277-95DB6B70DEF6} = {3AE1ED5F-3501-4DB7-B33E-2BBD089C6739}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {019F91EE-C387-4666-9B66-DD1B9E979CA5}
