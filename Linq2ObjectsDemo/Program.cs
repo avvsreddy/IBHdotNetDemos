@@ -42,10 +42,18 @@
             var result5 = from r in GetItems()
                           select new { ItemName = r.Name, CatagoryName = r.Catagory.Name };
 
+            var result6 = from r in GetItems()
+                          group r by r.Catagory.Name into g
 
-            foreach (var item in result2)
+                          select new { Catagory = g.Key, Count = g.Count() };
+
+            var r6 = (from r in result6
+                      where r.Count == (from rr in result6 select rr.Count).Max()
+                      select r.Catagory).FirstOrDefault();
+            Console.WriteLine(r6);
+            foreach (var item in result6)
             {
-                Console.WriteLine($"{item.Name}\t{item.Price}");
+                Console.WriteLine($"{item.Catagory}\t{item.Count}");
             }
 
         }
