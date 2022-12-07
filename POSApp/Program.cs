@@ -1,17 +1,65 @@
-﻿namespace POSApp
+﻿using System;
+using System.Configuration;
+
+namespace POSApp
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            BillingSystem billingSystem = new BillingSystem();
+            TaxCalculatorFactory factory = TaxCalculatorFactory.Instance;
+            //TaxCalculatorFactory tactory2 = TaxCalculatorFactory.Instance;
+
+            //Console.WriteLine($"Factory 1 {factory1.GetHashCode()}");
+            //Console.WriteLine($"Factory 2 {tactory2.GetHashCode()}");
+
+            ITaxCalculator tax = factory.CreateTaxCalculator();
+            BillingSystem billingSystem = new BillingSystem(tax);
             billingSystem.GenerateBill();
         }
     }
 
 
+    public class TaxCalculatorFactory
+    {
+
+        TaxCalculatorFactory()
+        {
+
+        }
+
+        public static readonly TaxCalculatorFactory Instance = new TaxCalculatorFactory();
+
+        public ITaxCalculator CreateTaxCalculator()
+        {
+            ITaxCalculator tax = null;
+            // read the config file
+            string className = ConfigurationManager.AppSettings["CALC"];
+            // use reflextion 
+            Type theType = Type.GetType(className);
+            tax = (ITaxCalculator)Activator.CreateInstance(theType);
+
+
+            return tax;
+        }
+    }
+
     class BillingSystem
     {
+        ITaxCalculator tax = null;
+
+        // ctor
+        public BillingSystem()
+        {
+            tax = new KATaxCalculator();
+        }
+
+        public BillingSystem(ITaxCalculator tax)
+        {
+            this.tax = tax;
+        }
+        // property
+        // method
         public void GenerateBill()
         {
             // scan all the barcodes
@@ -20,7 +68,7 @@
             // calculate the discounts
             double discAmt = 120;
             // calculate the tax
-            ITaxCalculator tax = new KLTaxCalculator();
+            // = new KLTaxCalculator();
             double taxAmt = tax.CalculateTax(totalAmount);
             // calculate the final bill amount
             double billAmt = totalAmount + taxAmt - discAmt;
@@ -76,4 +124,25 @@
     }
 
 
+    public class USTaxCalculator
+    {
+        public float ComputeTax(float amt)
+        {
+            //asdfsdfsdfsdf/
+            //sdfsdfsdfsdfsd
+            return 12.5f;
+        }
+    }
+
+    public class USTaxCalculatorAdaptor : ITaxCalculator
+    {
+        public double CalculateTax(double amt)
+        {
+            System.Console.WriteLine("Using US Tax Calculator");
+            USTaxCalculator uSTax = new USTaxCalculator();
+            float amount = (float)amt;
+            float tax = uSTax.ComputeTax(amount);
+            return (double)tax;
+        }
+    }
 }
