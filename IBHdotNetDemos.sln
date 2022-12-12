@@ -149,6 +149,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Language Basics Demo", "Lan
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs and Reference Materials", "Labs and Reference Materials", "{6791F912-80E3-4C5C-BD1A-5B7EC26A96CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF Demos", "EF Demos", "{FD862DD8-E679-4E3B-A5B0-C39EAB9A31AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementApp", "ProductsManagementApp\ProductsManagementApp.csproj", "{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -355,6 +359,10 @@ Global
 		{FA683A87-39AD-48DD-A8E5-6D742D2D5224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA683A87-39AD-48DD-A8E5-6D742D2D5224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA683A87-39AD-48DD-A8E5-6D742D2D5224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -419,6 +427,7 @@ Global
 		{A7315AE0-0645-4229-A211-823CAD0320F1} = {28195682-D675-4148-A217-AAEBBC0E9877}
 		{39EAACB1-8A6C-439C-AC48-1D3DC638DCA1} = {28195682-D675-4148-A217-AAEBBC0E9877}
 		{FA683A87-39AD-48DD-A8E5-6D742D2D5224} = {D0E420DE-1D5A-4AD2-AA4A-5DAD9869BB52}
+		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC} = {FD862DD8-E679-4E3B-A5B0-C39EAB9A31AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {019F91EE-C387-4666-9B66-DD1B9E979CA5}
