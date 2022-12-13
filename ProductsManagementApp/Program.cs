@@ -1,4 +1,5 @@
-﻿using ProductsManagementApp.DataAccess;
+﻿using Microsoft.EntityFrameworkCore;
+using ProductsManagementApp.DataAccess;
 using ProductsManagementApp.Entities;
 
 namespace ProductsManagementApp
@@ -13,11 +14,68 @@ namespace ProductsManagementApp
             // Create Entity Classes
             // Map Class with Table
 
-            //ProductsDbContext db = new ProductsDbContext();
-            ProductsRepository repo = new ProductsRepository();
-            repo.
-            Product p2 = new Product { Name = "Galaxy S22 Max", Price = 89000, Brand = "Samsung" };
-            db.Products.Add(p2);
+            ProductsDbContext db = new ProductsDbContext();
+            // store customer and supp details
+            //var c = new Customer { Name = "customer 1", Discount = 100, Email = "customer1@abc.com", Location = "cust Location", Mobile = "34234234", CustomerType = "gold" };
+            //var s = new Supplier { Name = "supplier 1", Email = "supplier1@xyz.com", GST = "supplergst", Rating = 8, Location = "suploca", Mobile = "34234234" };
+            //db.People.Add(c);
+            //db.People.Add(s);
+            //db.SaveChanges();
+
+            // get all customers
+            //var custs = db.Customers.ToList();
+            var supp = db.People.OfType<Supplier>().ToList();
+
+        }
+
+        private static void EgarLoading()
+        {
+            ProductsDbContext db = new ProductsDbContext();
+
+            // display product name and catagory name
+            var result = from p in db.Products//.Include("Catagory")
+                             //select new { PName = p.Name, CName = p.Catagory.Name };
+                         select p;
+
+            foreach (var item in result)
+            {
+                Console.WriteLine($"{item.Name}\t{item.Catagory.Name}");
+            }
+        }
+
+        private static void Add3()
+        {
+            ProductsDbContext db = new ProductsDbContext();
+            // add new product with existing catagory(mobiles)
+
+            // get the existing catagory
+            var existingCatagory = db.Catagories.Find(1);
+            var newProduct = new Product
+            {
+                Name = "Galaxy S22 Pro",
+                Brand = "Samsung",
+                Price = 90000,
+                Catagory = existingCatagory
+            };
+            db.Products.Add(newProduct);
+            db.SaveChanges();
+        }
+
+        private static void Add2()
+        {
+            ProductsDbContext db = new ProductsDbContext();
+            // add new product with new catagory
+            Catagory c = new Catagory { Name = "Mobiles" };
+            Product p = new Product
+            {
+                Name = "IPhone 14 Max",
+                Price = 150000,
+                Brand = "Apple",
+                Catagory = c
+            };
+            db.Products.Add(p);
+            //db.Catagories.Add(c);
+
             db.SaveChanges();
         }
 
@@ -36,9 +94,9 @@ namespace ProductsManagementApp
             ProductsDbContext db = new ProductsDbContext();
             var productToDel = (from p in db.Products
                                 where p.ProductID == 4
-                                select p).FirstOrDefault();
-            db.Products.Remove(productToDel);
-            db.SaveChanges();
+                                select p).ExecuteDelete();  //.FirstOrDefault();
+            //db.Products.Remove(productToDel);
+            //db.SaveChanges();
         }
 
         private static void Total()

@@ -151,7 +151,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs and Reference Material
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF Demos", "EF Demos", "{FD862DD8-E679-4E3B-A5B0-C39EAB9A31AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementApp", "ProductsManagementApp\ProductsManagementApp.csproj", "{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagementApp", "ProductsManagementApp\ProductsManagementApp.csproj", "{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbFirstEFDemo", "DbFirstEFDemo\DbFirstEFDemo.csproj", "{28917376-CE93-4DD3-9AB2-AA0BEFB8B59E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -363,6 +365,10 @@ Global
 		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28917376-CE93-4DD3-9AB2-AA0BEFB8B59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28917376-CE93-4DD3-9AB2-AA0BEFB8B59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28917376-CE93-4DD3-9AB2-AA0BEFB8B59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28917376-CE93-4DD3-9AB2-AA0BEFB8B59E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -428,6 +434,7 @@ Global
 		{39EAACB1-8A6C-439C-AC48-1D3DC638DCA1} = {28195682-D675-4148-A217-AAEBBC0E9877}
 		{FA683A87-39AD-48DD-A8E5-6D742D2D5224} = {D0E420DE-1D5A-4AD2-AA4A-5DAD9869BB52}
 		{E4481DD4-B2DB-409D-AB45-E2935A78C5DC} = {FD862DD8-E679-4E3B-A5B0-C39EAB9A31AB}
+		{28917376-CE93-4DD3-9AB2-AA0BEFB8B59E} = {FD862DD8-E679-4E3B-A5B0-C39EAB9A31AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {019F91EE-C387-4666-9B66-DD1B9E979CA5}

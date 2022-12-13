@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProductsManagementApp.DataAccess;
 
@@ -10,9 +11,11 @@ using ProductsManagementApp.DataAccess;
 namespace ProductsManagementApp.Migrations
 {
     [DbContext(typeof(ProductsDbContext))]
-    partial class ProductsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221213074713_tpc1")]
+    partial class tpc1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -23,8 +26,6 @@ namespace ProductsManagementApp.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.HasSequence("PersonSequence");
 
             modelBuilder.Entity("ProductSupplier", b =>
                 {
@@ -62,11 +63,7 @@ namespace ProductsManagementApp.Migrations
             modelBuilder.Entity("ProductsManagementApp.Entities.Person", b =>
                 {
                     b.Property<int>("PersonID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValueSql("NEXT VALUE FOR [PersonSequence]");
-
-                    SqlServerPropertyBuilderExtensions.UseSequence(b.Property<int>("PersonID"));
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -120,20 +117,6 @@ namespace ProductsManagementApp.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ProductsManagementApp.Entities.Customer", b =>
-                {
-                    b.HasBaseType("ProductsManagementApp.Entities.Person");
-
-                    b.Property<string>("CustomerType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("Discount")
-                        .HasColumnType("float");
-
-                    b.ToTable("Customers");
-                });
-
             modelBuilder.Entity("ProductsManagementApp.Entities.Supplier", b =>
                 {
                     b.HasBaseType("ProductsManagementApp.Entities.Person");
@@ -145,7 +128,7 @@ namespace ProductsManagementApp.Migrations
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
-                    b.ToTable("Suppliers");
+                    b.ToTable("Supplier");
                 });
 
             modelBuilder.Entity("ProductSupplier", b =>
