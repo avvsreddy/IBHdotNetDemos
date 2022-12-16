@@ -1,0 +1,37 @@
+﻿@model List<KnowledgeHubPortalWebApp.Models.Entities.Catagory> 
+
+<h1 class="display-1">Manage Catagories</h1>
+<hr />
+
+<a asp-action="Create" asp-controller="Catagories" class="btn btn-warning">Create New Catagory</a>
+<br />
+<form asp-action="Index">
+    <input type="text" name="searchText" placeholder="Enter text to search"  />
+    <input type="submit" name="btnSubmit" value="Search" class="btn btn-primary" />
+</form>
+
+<br />
+
+<h3>@TempData["Message"]</h3>
+<hr />
+<table class="table table-bordered table-hover" >
+    <tr>
+        <td>Catagory ID</td>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Edit</td>
+    </tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.CatagoryID</td>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td> 
+                <a asp-action="Edit" asp-controller="Catagories" asp-route-id="@item.CatagoryID" class="btn btn-warning">Edit</a> 
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
