@@ -3,14 +3,31 @@
 <h1>Edit Catagory</h1>
 <hr />
 
-<form asp-action="Update">
-    <input type="hidden" asp-for="CatagoryID" a value="@Model.CatagoryID"  /><br />
-    <label asp-for="Name"></label> 
-    <input type="text" asp-for="Name"  value="@Model.Name" /><br />
-                                                             
-    <label asp-for="Description"></label>
-    <textarea asp-for="Description" rows="6" cols="60">@Model.Description</textarea><br />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Update">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-    <input type="submit" name="btnSubmit" value="Edit" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" value="@Model.Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea rows="6" cols="60" asp-for="Description" class="form-control">@Model.Description</textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="CatagoryID" value="@Model.CatagoryID" />
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+            
+        </form>
+    </div>
+</div>
 
-</form>
+<div>
+    <a asp-action="Index" class="btn btn-outline-primary p-3">Back to List</a>
+</div>
+

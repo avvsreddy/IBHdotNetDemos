@@ -3,7 +3,7 @@
 <h1 class="display-1">Manage Catagories</h1>
 <hr />
 
-<a asp-action="Create" asp-controller="Catagories" class="btn btn-warning">Create New Catagory</a>
+<a asp-action="Create" asp-controller="Catagories" class="btn btn-warning p-3">Create New Catagory</a>
 <br />
 <form asp-action="Index">
     <input type="text" name="searchText" placeholder="Enter text to search"  />
@@ -13,13 +13,12 @@
 <br />
 
 <h3>@TempData["Message"]</h3>
-<hr />
 <table class="table table-bordered table-hover" >
     <tr>
-        <td>Catagory ID</td>
-        <td>Name</td>
-        <td>Description</td>
-        <td>Edit</td>
+        <th>Catagory ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Edit</th>
     </tr>
     <tbody>
         @foreach (var item in Model)
