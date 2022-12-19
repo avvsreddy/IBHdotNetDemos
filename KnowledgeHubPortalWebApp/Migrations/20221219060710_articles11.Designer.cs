@@ -4,6 +4,7 @@ using KnowledgeHubPortalWebApp.Models.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KnowledgeHubPortalWebApp.Migrations
 {
     [DbContext(typeof(KHDbContext))]
-    partial class KHDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221219060710_articles11")]
+    partial class articles11
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

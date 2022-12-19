@@ -1,0 +1,55 @@
+﻿@model IEnumerable<KnowledgeHubPortalWebApp.Models.Entities.Article>
+
+@{
+    ViewData["Title"] = "ReviewArticles";
+}
+
+<h1>Review Articles</h1>
+<hr />
+@TempData["Message"]
+
+<form method="post" >
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Select
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Catagory.Name)
+                </th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <input type="checkbox" name="ArticleID" value="@item.ArticleID" />
+                    </td>
+                    <td>
+                        <a href="@item.URL" target="_blank">@item.Title</a>
+                    </td>
+
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Catagory.Name)
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <input  formaction="/Articles/Approve"  type="submit" name="btnApprove" value="Approve" />
+    <input formaction="/Articles/Reject" type="submit" name="btnReject" value="Reject" />
+
+</form>

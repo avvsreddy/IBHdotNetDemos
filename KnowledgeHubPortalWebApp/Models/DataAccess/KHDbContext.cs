@@ -12,5 +12,6 @@ namespace KnowledgeHubPortalWebApp.Models.DataAccess
         }
         // tables config
         public DbSet<Catagory> Catagories { get; set; }
+        public DbSet<Article> Articles { get; set; }
     }
 }

@@ -1,9 +1,11 @@
 ﻿using KnowledgeHubPortalWebApp.Models.DataAccess;
 using KnowledgeHubPortalWebApp.Models.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KnowledgeHubPortalWebApp.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class CatagoriesController : Controller
     {
         ICatagoriesRepository repo = new CatagoriesRepository();
@@ -49,7 +51,7 @@ namespace KnowledgeHubPortalWebApp.Controllers
             Catagory catagory = repo.GetCatagory(id);
             return View(catagory);
         }
-
+        //[AllowAnonymous]
         public IActionResult Update(Catagory catagory)
         {
             if (!ModelState.IsValid && catagory == null)

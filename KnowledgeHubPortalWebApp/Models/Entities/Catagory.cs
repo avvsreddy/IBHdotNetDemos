@@ -9,5 +9,6 @@ namespace KnowledgeHubPortalWebApp.Models.Entities
         public string Name { get; set; }
         [Required(ErrorMessage = "Kindly enter the desc")]
         public string Description { get; set; }
+
     }
 }
