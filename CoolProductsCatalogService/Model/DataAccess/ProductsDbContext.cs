@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CoolProductsCatalogService.Model.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoolProductsCatalogService.Model.DataAccess
 {
@@ -7,9 +8,10 @@ namespace CoolProductsCatalogService.Model.DataAccess
         // db
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=CoolProductsDBIBH5;Integrated Security=True");
         }
 
         // tables
+        public DbSet<Product> Products { get; set; }
     }
 }

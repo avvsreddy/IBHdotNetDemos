@@ -4,55 +4,71 @@ namespace CoolProductsCatalogService.Model.DataAccess
 {
     public class ProductsRepository : IProductsRepository
     {
+        private ProductsDbContext db = new ProductsDbContext();
 
         public void AddProduct(Product product)
         {
-            throw new NotImplementedException();
+            db.Products.Add(product);
+            db.SaveChanges();
         }
 
         public void DeleteProduct(int productId)
         {
-            throw new NotImplementedException();
+            var productToDel = db.Products.Find(productId);
+            db.Products.Remove(productToDel);
+            db.SaveChanges();
+
         }
 
         public Product GetProductById(int id)
         {
-            throw new NotImplementedException();
+            return db.Products.Find(id);
         }
 
         public Product GetProductByName(string name)
         {
-            throw new NotImplementedException();
+            return (from p in db.Products
+                    where p.Name == name
+                    select p).FirstOrDefault();
         }
 
         public List<Product> GetProducts()
         {
-            throw new NotImplementedException();
+            return db.Products.ToList();
         }
 
         public List<Product> GetProductsByBrand(string brand)
         {
-            throw new NotImplementedException();
+            return (from p in db.Products
+                    where p.Brand.Contains(brand)
+                    select p).ToList();
         }
 
         public List<Product> GetProductsByCatagory(string catagory)
         {
-            throw new NotImplementedException();
+            return (from p in db.Products
+                    where p.Catagory.Contains(catagory)
+                    select p).ToList();
         }
 
         public List<Product> GetProductsByCountry(string country)
         {
-            throw new NotImplementedException();
+            return (from p in db.Products
+                    where p.Country.Contains(country)
+                    select p).ToList();
         }
 
         public List<Product> GetProductsByPrice(double price)
         {
-            throw new NotImplementedException();
+            return (from p in db.Products
+                    where p.Price >= price
+                    select p).ToList();
         }
 
         public void UpdateProduct(Product product)
         {
-            throw new NotImplementedException();
+            db.Products.Update(product);
+            db.SaveChanges();
         }
     }
 }
