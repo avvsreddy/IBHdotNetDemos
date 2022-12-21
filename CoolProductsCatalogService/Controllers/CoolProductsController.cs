@@ -110,10 +110,60 @@ namespace CoolProductsCatalogService.Controllers
         }
 
         // get by catagory
+        [HttpGet]
+        [Route("catagory/{catagory}")]
+        public IActionResult GetProductsByCatagory(string catagory)
+        {
+            var products = repo.GetProductsByCatagory(catagory);
+            if (products == null || products.Count == 0)
+                return NotFound();
+            return Ok(products);
+        }
 
         // save
-        //update
-        // delete
+        // POST .../api/coorproducts
 
+        [HttpPost]
+        public IActionResult PostProducts(Product product)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Invalid product data");
+            }
+            repo.AddProduct(product);
+            // status code - 201/location/data
+            return Created($"api/coolproducts/{product.ProductID}", product);
+        }
+
+        //update
+        [HttpPut]
+        public IActionResult PutProducts(Product product)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Invalid product data");
+            }
+            repo.UpdateProduct(product);
+            // status code - 201/location/data
+            return Ok();
+        }
+        // delete
+        //[Authorize]
+        [HttpDelete]
+        [Route("{id}")]
+        public IActionResult DeleteProductById(int id)
+        {
+            Product p = repo.GetProductById(id);
+            if (p == null) // not found
+            {
+                return NotFound();
+
+            }
+            else //found
+            {
+                repo.DeleteProduct(id);
+                return Ok();
+            }
+        }
     }
 }
